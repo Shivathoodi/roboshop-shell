@@ -45,8 +45,8 @@ VALIDATE $? "Removing default index html files"
 
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>$LOGFILE
 
-VALIDATE $? "Downloading frontend artifact"
-
+VALIDATE $? "Downloading frontend artifacts"
+  
 cd /usr/share/nginx/html &>>$LOGFILE
 
 VALIDATE $? "Moving to default HTML directory"
