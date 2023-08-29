@@ -12,3 +12,4 @@ do
    echo "creating $i instance"
    aws ec2 run-instance --image-id $IMAGE_ID --instance-type $INSTANCE_TYPE --security-group 
    $SECURITY_GROUP_ID --tag-specifications  "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
+done
