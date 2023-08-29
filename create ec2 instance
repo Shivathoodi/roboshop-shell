@@ -1,0 +1,11 @@
+#!/bin/bash
+
+NAMES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
+
+
+# if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
+
+for i in "${NAMES[@]}"
+do  
+   echo "NAME: $i"
+done   
